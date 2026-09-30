@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rekha Belligeri | Data Analyst Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fa;--surface:#fff;--ink:#12203a;--muted:#55657a;--line:#d8dfe7;--accent:#0f766e;--hi:#f2a900;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1526;--surface:#141f36;--ink:#e8eef7;--muted:#9fb0c6;--line:#263552;--accent:#3cc4b6;--hi:#f5b83a}}
+:root[data-theme="dark"]{--bg:#0d1526;--surface:#141f36;--ink:#e8eef7;--muted:#9fb0c6;--line:#263552;--accent:#3cc4b6;--hi:#f5b83a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.1rem 0;font-weight:600}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center;padding:2.5rem 0 4rem}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:700;letter-spacing:-.02em}
+.role{font-size:1.25rem;color:var(--accent);font-weight:600;margin:.8rem 0 1rem}
+.hero p{max-width:34rem;color:var(--muted)}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.model{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem}
+.model svg{width:100%;height:auto;display:block}
+.model figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+.model text{font-family:"Source Sans 3",sans-serif;fill:var(--ink);font-size:13px}
+.model .fact{fill:var(--ink)}
+.model .factt{fill:var(--bg);font-weight:600}
+.model .dim{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+.model line{stroke:var(--line);stroke-width:2}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:2rem;margin-bottom:1.5rem}
+.stats{display:flex;gap:2.5rem;flex-wrap:wrap;margin-top:2rem}
+.stats b{display:block;font:700 1.9rem "Bricolage Grotesque",sans-serif;color:var(--ink)}
+.stats span{color:var(--muted);font-size:.95rem}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:1.3rem}
+.proj:nth-child(2){border-left-color:var(--hi)}
+.proj:nth-child(3){border-left-color:var(--muted)}
+.proj h3{font-size:1.3rem;margin-bottom:.3rem}
+.tools{color:var(--accent);font-weight:600;font-size:.95rem;margin:0 0 .7rem}
+.proj ul,.job ul{margin:0;padding-left:1.15rem}
+.proj li,.job li{margin-bottom:.4rem}
+.job{display:grid;grid-template-columns:12rem 1fr;gap:1.5rem;padding:1.2rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job h3{font-size:1.2rem}
+.when{color:var(--muted);font-size:.95rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.skills h3{font-size:1.05rem;margin-bottom:.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.15rem .7rem;font-size:.92rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.two h3{font-size:1.1rem;margin-bottom:.5rem}
+.two p{margin:0 0 .5rem}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{font-size:2rem;margin-bottom:.5rem}
+@media (max-width:760px){.hero,.projects,.two{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:.3rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Rekha Belligeri</h1>
+<p class="role">Data Analyst and Business Analyst, Bengaluru</p>
+<p>I turn messy business data into dashboards people can act on. I build reports in Power BI, Tableau, SQL and Excel, and I bring four years of hiring and MIS reporting experience to every project.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="mailto:rekhabelligeri@gmail.com">Email me</a></div>
+<div class="stats">
+<div><b>4+ yrs</b><span>MIS and hiring analytics</span></div>
+<div><b>39,717</b><span>loan records analyzed</span></div>
+<div><b>4</b><span>dashboard projects</span></div>
+</div>
+</div>
+<figure class="model" style="margin:0">
+<svg viewBox="0 0 420 300" role="img" aria-label="Star schema with a sales fact table connected to Date, Product, Customer, Geography and Salesperson dimensions">
+<line x1="210" y1="150" x2="210" y2="45"/><line x1="210" y1="150" x2="70" y2="90"/><line x1="210" y1="150" x2="350" y2="90"/><line x1="210" y1="150" x2="90" y2="235"/><line x1="210" y1="150" x2="330" y2="235"/>
+<rect class="fact" x="150" y="125" width="120" height="50" rx="8"/><text class="factt" x="210" y="155" text-anchor="middle">Fact: Sales</text>
+<rect class="dim" x="160" y="15" width="100" height="32" rx="6"/><text x="210" y="36" text-anchor="middle">Date</text>
+<rect class="dim" x="20" y="72" width="100" height="32" rx="6"/><text x="70" y="93" text-anchor="middle">Product</text>
+<rect class="dim" x="300" y="72" width="100" height="32" rx="6"/><text x="350" y="93" text-anchor="middle">Customer</text>
+<rect class="dim" x="30" y="220" width="120" height="32" rx="6"/><text x="90" y="241" text-anchor="middle">Geography</text>
+<rect class="dim" x="270" y="220" width="120" height="32" rx="6"/><text x="330" y="241" text-anchor="middle">Salesperson</text>
+</svg>
+<figcaption>The dimensional model behind my Adventure Works dashboard.</figcaption>
+</figure>
+</header>
+</div>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="projects">
+<article class="proj"><h3>Adventure Works Sales Dashboard</h3><p class="tools">Power BI, SQL, Excel, Python</p>
+<ul><li>Analyzed sales, profit, orders, customers, product categories and regions.</li><li>Designed a model with a sales fact table and five dimensions.</li><li>Wrote DAX for revenue, profit margin, YTD, MTD and MoM growth.</li></ul></article>
+<article class="proj"><h3>Banking Analytics Dashboard</h3><p class="tools">Tableau, SQL, Python</p>
+<ul><li>Analyzed loan applications, funded amount, repayments, interest rate and DTI across 39,717 loans.</li><li>Built KPI cards, MTD and MoM metrics, and breakdowns by grade, purpose, state and verification status.</li><li>Cleaned data and checked for duplicate IDs with SQL and Python.</li></ul></article>
+<article class="proj"><h3>Manufacturing Analytics Dashboard</h3><p class="tools">Power BI, SQL, Excel</p>
+<ul><li>Tracked production volume, quality, downtime and cost in one interactive report.</li><li>Defined the KPIs and wrote DAX measures for monitoring.</li><li>Found trends and exceptions across products, plants and time periods.</li></ul></article>
+<article class="proj"><h3>Hiring Analytics Dashboard</h3><p class="tools">Power BI, SQL, Excel</p>
+<ul><li>Analyzed requisition aging, candidate conversion, recruiter performance and time-to-hire.</li><li>Built a star-schema model with KPI cards, slicers, trend charts and drill-through.</li></ul></article>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="job"><div><h3>Business Analyst Intern</h3><div class="when">AI Variant<br>Mar 2026 to Sep 2026</div></div>
+<ul><li>Cleaned and validated raw data with Excel, Power Query and structured data-quality checks.</li><li>Built Power BI dashboards with KPI cards, slicers, drill-through views and DAX measures.</li><li>Wrote SQL with JOINs, CTEs, window functions and CASE statements to extract and reconcile data.</li><li>Created Tableau reports and documented findings and recommendations for stakeholders.</li></ul></div>
+<div class="job"><div><h3>Consultant</h3><div class="when">Careernet RPO WellSky, Bengaluru<br>Jan 2024 to Feb 2026</div></div>
+<ul><li>Produced weekly, monthly and ad-hoc MIS reports covering hiring progress, recruiter productivity, pipeline aging, time-to-hire and offer-to-join.</li><li>Built Excel trackers with Pivot Tables, XLOOKUP and Power Query to combine data from several sources.</li><li>Validated candidate and requisition data, reconciled source files and investigated discrepancies for Power BI reporting.</li><li>Worked with recruiters, hiring managers and clients to turn reporting needs into updates.</li></ul></div>
+<div class="job"><div><h3>Consultant</h3><div class="when">Careernet, Bengaluru<br>Jan 2022 to Jan 2024</div></div>
+<ul><li>Maintained recruitment trackers and Excel MIS reports on open positions, submissions, interviews, offers and joining status.</li><li>Ran data-quality checks and shared regular hiring-status updates with stakeholders.</li></ul></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Analytics and BI</h3><div class="chips"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Tableau</span><span>Data modeling</span><span>Drill-through</span></div></div>
+<div><h3>SQL</h3><div class="chips"><span>JOINs</span><span>CTEs</span><span>Subqueries</span><span>Window functions</span><span>Aggregations</span><span>CASE</span></div></div>
+<div><h3>Excel</h3><div class="chips"><span>Pivot Tables</span><span>XLOOKUP</span><span>Power Query</span><span>Reconciliation</span><span>MIS reporting</span></div></div>
+<div><h3>Business analysis</h3><div class="chips"><span>Requirements gathering</span><span>KPI definition</span><span>Trend analysis</span><span>Documentation</span><span>Agile</span></div></div>
+<div><h3>Python</h3><div class="chips"><span>Pandas</span><span>NumPy</span></div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="two">
+<div><h2 style="font-size:1.6rem;margin-bottom:1rem">Education</h2><h3>MBA, Human Resource and Business Statistics</h3><p>Karnataka University, Dharwad, 2021</p></div>
+<div><h2 style="font-size:1.6rem;margin-bottom:1rem">Certifications</h2><p>NASSCOM Certified Business Analyst, ExcelR, 2026</p><p>Business Analyst Programme with Distinction, ExcelR, Jun 2026</p></div>
+</div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+<h2>Let's talk about your data</h2>
+<p>I'm open to data analyst and business analyst roles.</p>
+<p><a href="mailto:rekhabelligeri@gmail.com">rekhabelligeri@gmail.com</a> · Bengaluru, India</p>
+</div></footer>
+</body>
+</html>
